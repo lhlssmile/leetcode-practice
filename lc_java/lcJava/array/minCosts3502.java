@@ -13,7 +13,7 @@ class minCosts3502 {
         return ans;
     }
     public void main(){
-        minCosts sol = new minCosts();
+        minCosts3502 sol = new minCosts3502();
         int[] cost = {5,3,1,2,4};
         int[] ans = sol.minCosts(cost);
         for(int i = 0;i<ans.length;i++){
