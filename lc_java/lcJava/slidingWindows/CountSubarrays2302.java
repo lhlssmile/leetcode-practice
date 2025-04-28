@@ -1,4 +1,4 @@
-package slidingWindows
+package slidingWindows;
 
 
 class CountSubarrays2302{
@@ -18,7 +18,7 @@ class CountSubarrays2302{
     }
     
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        CountSubarrays2302 sol = new CountSubarrays2302();
         int[] nums = {2,1,4,3,5};
         long k = 10;
         System.out.println(sol.countSubarrays(nums, k));
