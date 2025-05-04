@@ -3,9 +3,7 @@
 #define MYLIB_H
 
 #include <bits/stdc++.h>
-// #include <iostream>
-//#include <string>
-// 条件化 GCC 优化，仅在 GCC 下启用
+
 #ifdef __GNUC__
 // #pragma GCC optimize("Ofast,no-stack-protector,unroll-loops")
 #endif
