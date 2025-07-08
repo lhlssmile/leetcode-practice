@@ -87,13 +87,13 @@ if __name__ == "__main__":
     
     # 测试用例1: [2,4,3] + [5,6,4] = [7,0,8]
     l1 = create_linked_list([2, 4, 3])
-    l2 = create_linked_list([5, 6, 4])
+    l2 = create_linked_list([5, 6, 4, 6])
     result = solution.addTwoNumbers(l1, l2)
     print(f"测试1: {print_linked_list(result)}")  # 应该输出 [7, 0, 8]
     
     # 测试用例2: [0] + [0] = [0]
-    l1 = create_linked_list([0])
     l2 = create_linked_list([0])
+    l1 = create_linked_list([0])
     result = solution.addTwoNumbers(l1, l2)
     print(f"测试2: {print_linked_list(result)}")  # 应该输出 [0]
     
