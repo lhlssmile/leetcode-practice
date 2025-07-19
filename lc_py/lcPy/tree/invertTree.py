@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 
 
 class TreeNode:
@@ -22,4 +22,23 @@ class Solution:
 
     def diameterOfBinaryTree(self,root: Optional[TreeNode]) -> int:
         return 0
+
+    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+        def helper(left, right):
+            if left > right:
+                return None
+            mid = (left + right) // 2
+            node = TreeNode(nums[mid])
+            node.left = helper(left, mid - 1)
+            node.right = helper(mid + 1, right)
+            return node
+
+        return helper(0, len(nums) - 1)
+
+
+
+if __name__ == '__main__':
+    nums = [-10, -3, 0, 5, 9]
+    s = Solution()
+    print(s.sortedArrayToBST(nums))
 

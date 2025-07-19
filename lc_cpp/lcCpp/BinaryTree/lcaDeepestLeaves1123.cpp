@@ -56,6 +56,18 @@ public:
         dfs(dfs,root);
         return inorder_tree;
     }
+    static TreeNode* lowestCommonAncestor(TreeNode* root,TreeNode* p,TreeNode* q) {
+        if (root == nullptr || root == q || root == p) {
+            return root;
+        }
+        TreeNode* left = lowestCommonAncestor(root->left,p,q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
+
+        if (left && right) {
+            return root;
+        }
+        return left ? left : right;
+    }
 };
 int main() {
     // 创建树的 lambda 表达式
