@@ -31,7 +31,7 @@ func minCost(basket1, basket2 []int) int64 {
 		cnt2[int64(x)]++
 	}
 	var swaps []int64
-	for val, cnt := range totalCnt {
+	for val, _ := range totalCnt {
 		diff := cnt1[val] - cnt2[val]
 		if diff > 0 {
 			for i := 0; i < diff/2; i++ {
