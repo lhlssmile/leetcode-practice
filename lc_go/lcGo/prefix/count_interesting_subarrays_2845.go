@@ -1,4 +1,4 @@
-package prefix
+package main
 
 import (
 	"fmt"
