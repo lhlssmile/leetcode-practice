@@ -1,7 +1,6 @@
 //
 // Created by 24276 on 2025/8/8.
 //
-#include <chrono>
 #include <vector>
 using namespace std;
 class can_eat {
@@ -32,5 +31,8 @@ public:
 
 int main() {
     can_eat ps;
+    vector<int> candiesCount = {7, 4, 5, 3, 8};
+    vector<vector<int>> queries = {{0, 2, 2}, {4, 2, 4}, {2, 13, 1000000000}};
+    vector<bool> ans = ps.canEat(candiesCount, queries);
     return 0;
 }
