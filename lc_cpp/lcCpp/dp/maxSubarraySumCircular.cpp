@@ -17,9 +17,19 @@ public:
         if (mxSum < 0) return mxSum;
         return max(mxSum, total - miSum);
     }
+    int maximumSum (vector<int>& arr) {
+        int mxEn = 0, mxSum = arr[0];
+        for (int x : arr) {
+            mxEn = max(x, x + mxEn);
+            mxSum = max(mxSum, mxEn);
+        }
+        return mxSum;
+    }
 };
 
 int main() {
-
+    vector<int> arr = {1, -2, 0, 3};
+    max_subarray_sum_circular ps;
+    ps.maximumSum(arr);
     return 0;
 }
