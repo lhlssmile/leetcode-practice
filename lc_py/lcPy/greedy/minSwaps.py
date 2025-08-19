@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def minSwaps(self, nums: List[int]) -> int:
         odd_start, even_start, even_pos, odd_pos, even_cnt, odd_cnt = 0, 0, [], [], 0, 0

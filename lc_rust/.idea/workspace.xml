@@ -11,7 +11,36 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1f4f64-e914-4440-a8e9-4d01c19b4f8a" name="Changes" comment="" />
+    <list default="true" id="0c1f4f64-e914-4440-a8e9-4d01c19b4f8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/DifferenceArray/numberOfPoints.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/SlidingWindows/resultsArray.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/hashTable/minSwaps.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_go/lcGo/DiffArray/numberOfPoints.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_go/lcGo/math/smallestIndex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_py/lcPy/DiffArray/numberOfPoints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lc_py/lcPy/array/minSwaps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/min_swaps_HASHTABLE.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/number_of_points_DIFFERENCEARRAY.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/results_array_SLIDINGWINDOW.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/smallest_index_ARRAY.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/zero_filled_subarray_SLIDINGWINDOW.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/SlidingWindows/maxProfit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/SlidingWindows/maxProfit.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/backtrack/judgePoint24.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/backtrack/judgePoint24.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/dp/minXor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/dp/minXor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/graph/minCost.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/graph/minCost.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/greedy/minSwaps.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/greedy/minSwaps.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_cpp/lcCpp/prefix/longestCommonPrefix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_cpp/lcCpp/prefix/longestCommonPrefix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_go/lcGo/DiffArray/xorAfterQueries.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_go/lcGo/DiffArray/xorAfterQueries.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_go/lcGo/greedy/minSwaps.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_go/lcGo/greedy/minSwaps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_go/lcGo/math/perfectPairs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_go/lcGo/math/perfectPairs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_go/lcGo/slidingWindows/maxProfit.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_go/lcGo/slidingWindows/maxProfit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_go/lcGo/strings/partitionString.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_go/lcGo/strings/partitionString.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_py/lcPy/dp/new21Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_py/lcPy/dp/new21Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_py/lcPy/greedy/minSwaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_py/lcPy/greedy/minSwaps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lc_py/lcPy/prefix/longestCommonPrefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lc_py/lcPy/prefix/longestCommonPrefix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rust basis.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/rust basis.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +54,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="6j1KskqI" />
   </component>
@@ -36,22 +68,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cargo.Run lc_rust.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Run lc_rust.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Cargo.Run maximum69number">
     <configuration name="Run lc_rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package lc_rust --bin lc_rust" />
@@ -124,6 +156,7 @@
       <updated>1755444395012</updated>
       <workItem from="1755444397917" duration="3001000" />
       <workItem from="1755487394348" duration="8893000" />
+      <workItem from="1755568343914" duration="8839000" />
     </task>
     <servers />
   </component>
