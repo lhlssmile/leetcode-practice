@@ -1,0 +1,73 @@
+# === 规则：仓库根目录默认忽略一切，只保留 lc_* 项目和少量元文件 ===
+/*
+
+# 允许的根目录文件
+!.gitignore
+!.gitattributes
+!README.md
+!LICENSE
+
+# 允许所有以 lc_ 开头的项目目录及其内容
+!/lc_*/
+!/lc_*/**
+
+# === 在 lc_* 项目内部，忽略常见 IDE/构建产物 ===
+
+# IDE / 编辑器
+/lc_*/.idea/
+/lc_*/.vscode/
+/lc_*/.classpath
+/lc_*/.project
+/lc_*/.settings/
+# OS
+/lc_*/.DS_Store
+/lc_*/Thumbs.db
+
+# ------ C/C++ / CMake（lc_cpp）------
+/lc_cpp/build/
+/lc_cpp/cmake-build-*/
+/lc_cpp/**/CMakeFiles/
+/lc_cpp/**/CMakeCache.txt
+/lc_cpp/**/cmake_install.cmake
+/lc_cpp/**/Makefile
+/lc_cpp/**/*.o
+/lc_cpp/**/*.obj
+/lc_cpp/**/*.exe
+/lc_cpp/**/*.out
+/lc_cpp/**/*.a
+/lc_cpp/**/*.lib
+/lc_cpp/**/*.dll
+/lc_cpp/**/*.so
+/lc_cpp/**/*.dSYM/
+
+# ------ Go（lc_go）------
+/lc_go/bin/
+/lc_go/**/vendor/
+/lc_go/**/*.exe
+
+# ------ Java（lc_java）------
+/lc_java/out/
+/lc_java/target/
+/lc_java/**/*.class
+/lc_java/**/*.jar
+/lc_java/**/*.war
+/lc_java/**/*.ear
+/lc_java/**/*.log
+/lc_java/**/*.iml
+
+# ------ Python（lc_py）------
+/lc_py/**/__pycache__/
+/lc_py/**/*.pyc
+/lc_py/**/.pytest_cache/
+/lc_py/**/.mypy_cache/
+/lc_py/**/.ruff_cache/
+/lc_py/**/.venv/
+/lc_py/**/venv/
+
+# ------ Rust（lc_rust）------
+/lc_rust/target/
+# Cargo.lock 一般建议二进制项目提交、库项目可忽略，这里不忽略。
+
+# 通用临时文件
+/lc_*/**/*.swp
+/lc_*/**/*.swo
