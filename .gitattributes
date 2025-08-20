@@ -1,0 +1,10 @@
+# 确保文本文件在 Windows 和 Linux 上换行符一致
+* text=auto
+
+# 强制 Markdown 和代码文件使用 LF 换行
+*.md text eol=lf
+*.cpp text eol=lf
+*.go text eol=lf
+*.java text eol=lf
+*.py text eol=lf
+*.gitignore text eol=lf
