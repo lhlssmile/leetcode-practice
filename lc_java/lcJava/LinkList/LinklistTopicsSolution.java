@@ -42,11 +42,11 @@ class LinklistTopicsSolution {
         return dummy.next;
     }
     public static void main(String[] args){
-        LinklistTopicsSolution sol = new LinklistTopicsSolution();
-        int[] l1 = {1,2,4};
-        int[] l2 = {1,3,4};
-        ListNode  l1 = sol.createLinkedList();
-        ListNode l2 = sol.createLinkedList();
-        sol.mergeTwoLists(l1,l2);
+//        LinklistTopicsSolution sol = new LinklistTopicsSolution();
+//        int[] l1 = {1,2,4};
+//        int[] l2 = {1,3,4};
+////        ListNode  l1 = sol.createLinkedList();
+////        ListNode l2 = sol.createLinkedList();
+//        sol.mergeTwoLists(l1,l2);
     }
 }

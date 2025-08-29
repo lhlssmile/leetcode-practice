@@ -3,8 +3,6 @@
 
 package lcJava.dp;
 
-import java.util.Arrays;
-
 public class DeleteOperation583Optimized {
     
     /**
