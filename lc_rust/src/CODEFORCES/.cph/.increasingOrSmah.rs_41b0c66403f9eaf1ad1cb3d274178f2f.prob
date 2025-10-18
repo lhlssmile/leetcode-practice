@@ -1,0 +1,1 @@
+{"name":"Local: increasingOrSmah","url":"d:\\mine_lcpractice\\lc_rust\\src\\CODEFORCES\\increasingOrSmah.rs","tests":[{"id":1760682312979,"input":"3\n3\n1 1 3\n1\n100\n9\n9 9 3 2 4 4 8 5 3","output":"3\n1\n11"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mine_lcpractice\\lc_rust\\src\\CODEFORCES\\increasingOrSmah.rs","group":"local","local":true}

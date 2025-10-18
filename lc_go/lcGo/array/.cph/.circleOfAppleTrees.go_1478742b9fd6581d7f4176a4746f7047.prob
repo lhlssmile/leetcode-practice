@@ -1,0 +1,1 @@
+{"name":"Local: circleOfAppleTrees","url":"d:\\mine_lcpractice\\lc_go\\lcGo\\array\\circleOfAppleTrees.go","tests":[{"id":1760543783013,"input":"4\n2 2 2 2\n5\n1 4 5 1 2\n6\n5 4 2 1 2 3","output":"1\n4\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mine_lcpractice\\lc_go\\lcGo\\array\\circleOfAppleTrees.go","group":"local","local":true}
