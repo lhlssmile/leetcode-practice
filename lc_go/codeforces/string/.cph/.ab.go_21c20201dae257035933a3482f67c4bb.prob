@@ -1,1 +1,0 @@
-{"name":"Local: ab","url":"d:\\mine_lcpractice\\lc_go\\codeforces\\string\\ab.go","tests":[{"id":1760586277669,"input":"5\n4\nabab\n6\nbababa\n7\nabababa\n2\nab\n1\nb\n","output":"1\n2\n2\n0\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mine_lcpractice\\lc_go\\codeforces\\string\\ab.go","group":"local","local":true}

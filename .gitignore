@@ -71,3 +71,18 @@
 # 通用临时文件
 /lc_*/**/*.swp
 /lc_*/**/*.swo
+# Codeforces Helper / 问题工具生成文件（.cph 是临时 prob 文件）
+/lc_*/**/.cph/
+/lc_*/**/*.prob
+
+# Visual Studio 生成（除了 .vscode，已经忽略了）
+/lc_*/.vs/
+/lc_*/**/*.user
+/lc_*/**/*.suo
+/lc_*/**/*.sln
+
+# 其他通用垃圾（日志、备份等）
+/lc_*/**/*.log
+/lc_*/**/*~
+/lc_*/**/#*#
+/lc_*/**/._*
