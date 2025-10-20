@@ -54,7 +54,8 @@
 /lc_java/**/*.ear
 /lc_java/**/*.log
 /lc_java/**/*.iml
-
+/lc_java/venv/
+/lc_java/out/
 # ------ Python（lc_py）------
 /lc_py/**/__pycache__/
 /lc_py/**/*.pyc

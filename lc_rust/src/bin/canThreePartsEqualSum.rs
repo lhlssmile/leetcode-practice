@@ -103,9 +103,9 @@ fn can_three_parts_equal_sum_closure(arr: Vec<i32>) -> bool {
     }
     
     let target = sum / 3;
-    let mut current_sum = 0;
     
     let count_parts = |nums: Vec<i32>| -> i32 {
+        let mut current_sum = 0;
         nums.into_iter()
             .filter_map(|x| {
                 current_sum += x;

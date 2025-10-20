@@ -102,28 +102,28 @@ impl Solution {
     
     // 使用Iterator适配器的版本
     pub fn remove_kdigits_iterator(num: String, k: i32) -> String {
-        use std::iter::once;
-        
         let chars: Vec<char> = num.chars().collect();
         let mut k = k as usize;
+        let mut stack = Vec::new();
         
-        // 使用scan进行有状态的迭代
-        let processed: Vec<char> = chars.into_iter()
-            .scan(Vec::new(), |stack, digit| {
-                // 移除比当前数字大的栈顶元素
-                while !stack.is_empty() && k > 0 && stack.last().unwrap() > &digit {
-                    stack.pop();
-                    k -= 1;
-                }
-                stack.push(digit);
-                Some(stack.clone())
-            })
-            .last()
-            .unwrap_or_default();
+        // 使用for_each进行迭代处理
+        chars.iter().for_each(|&digit| {
+            // 移除比当前数字大的栈顶元素
+            while !stack.is_empty() && k > 0 && stack.last().unwrap() > &digit {
+                stack.pop();
+                k -= 1;
+            }
+            stack.push(digit);
+        });
         
-        // 处理剩余删除次数并去掉前导零
-        processed.into_iter()
-            .take(processed.len().saturating_sub(k))
+        // 如果还有剩余删除次数，从后面删除
+        if k > 0 {
+            let new_len = stack.len().saturating_sub(k);
+            stack.truncate(new_len);
+        }
+        
+        // 处理前导零并返回结果
+        stack.into_iter()
             .skip_while(|&c| c == '0')
             .collect::<String>()
             .pipe(|s| if s.is_empty() { "0".to_string() } else { s })

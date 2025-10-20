@@ -92,11 +92,11 @@ impl LRUCache {
         let prev = node.borrow().prev.clone();
         let next = node.borrow().next.clone();
         
-        if let Some(prev_node) = prev {
+        if let Some(ref prev_node) = prev {
             prev_node.borrow_mut().next = next.clone();
         }
-        if let Some(next_node) = next {
-            next_node.borrow_mut().prev = prev;
+        if let Some(ref next_node) = next {
+            next_node.borrow_mut().prev = prev.clone();
         }
     }
     

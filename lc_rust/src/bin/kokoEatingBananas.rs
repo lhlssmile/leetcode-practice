@@ -4,8 +4,8 @@
 // 珂珂可以决定她吃香蕉的速度 k （单位：根/小时）。
 // 返回她可以在 h 小时内吃掉所有香蕉的最小速度 k（k 为整数）。
 
-use std::cmp;
-use std::collections::HashMap;
+// use std::cmp;
+// use std::collections::HashMap;
 
 // 标准二分查找实现
 fn min_eating_speed_binary_search(piles: Vec<i32>, h: i32) -> i32 {
@@ -155,16 +155,13 @@ fn min_eating_speed_closure(piles: Vec<i32>, h: i32) -> i32 {
     let max_pile = *piles.iter().max().unwrap();
     
     // 创建一个返回闭包的函数
-    let create_checker = |piles: &[i32], h: i32| {
-        move |k: i32| -> bool {
-            piles
-                .iter()
-                .map(|&pile| (pile + k - 1) / k)
-                .sum::<i32>() <= h
-        }
+    let piles_clone = piles.clone();
+    let checker = move |k: i32| -> bool {
+        piles_clone
+            .iter()
+            .map(|&pile| (pile + k - 1) / k)
+            .sum::<i32>() <= h
     };
-    
-    let checker = create_checker(&piles, h);
     
     // 使用partition_point进行二分查找
     let result = (1..=max_pile)
@@ -188,7 +185,7 @@ fn min_eating_speed_iterator_advanced(piles: Vec<i32>, h: i32) -> i32 {
     
     // 使用try_fold进行早期退出的搜索
     let result = (1..=max_pile)
-        .try_fold(None, |acc, k| {
+        .try_fold(None::<i32>, |acc, k| {
             let hours_needed = piles
                 .iter()
                 .try_fold(0, |sum, &pile| {
@@ -263,15 +260,16 @@ fn min_eating_speed_custom_iterator(piles: Vec<i32>, h: i32) -> i32 {
     }
     
     let max_pile = *piles.iter().max().unwrap();
+    let piles_clone = piles.clone();
     
     let predicate = move |k: i32| -> bool {
-        piles
+        piles_clone
             .iter()
             .map(|&pile| (pile + k - 1) / k)
             .sum::<i32>() <= h
     };
     
-    let mut search_iter = BinarySearchIterator::new(1, max_pile, predicate);
+    let search_iter: BinarySearchIterator = BinarySearchIterator::new(1, max_pile, predicate);
     search_iter.last().unwrap_or(max_pile)
 }
 
