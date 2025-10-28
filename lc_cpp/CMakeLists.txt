@@ -37,7 +37,7 @@ else()
 endif()
 
 # 这里手动改成你要编译的题目文件（相对路径即可）
-set(SOURCE_FILE codeforces/gym/cfGYM105335.cpp)
+set(SOURCE_FILE codeforces/ds/binary_search/cf2128e.cpp)
 
 # 检查文件是否存在
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${SOURCE_FILE}")
