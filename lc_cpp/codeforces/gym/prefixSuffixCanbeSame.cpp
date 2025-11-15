@@ -22,6 +22,7 @@ int main() {
 
         int overlap = pi[n - 1];
         cout << s + s.substr(overlap) << "\n";
+
     }
     return 0;
 }
