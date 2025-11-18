@@ -37,7 +37,7 @@ else()
 endif()
 
 # 这里手动改成你要编译的题目文件（相对路径即可）
-set(SOURCE_FILE lcCpp/dp/lc_1178NumberofValidWordsforEachPuzzle.cpp)
+set(SOURCE_FILE lcCpp/dp/cf165e.cpp)
 
 # 检查文件是否存在
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${SOURCE_FILE}")
